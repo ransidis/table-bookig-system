@@ -3,8 +3,37 @@ import './Main.css';
 import GreekSalad from "./images/GreekSalad.png"
 import LemonDessert from "./images/LemonDessert.png"
 import Bruchetta from "./images/Bruchetta.png"
+import avatar1 from "./images/avatar1.png"
+import avatar2 from "./images/avatar2.png"
+import avatar3 from "./images/avatar3.png"
+
 
 function Main(){
+
+    const testimonials = [
+        {
+            card: "card1",
+            image: avatar1,
+          name: "John D.",
+          stars:"⭐⭐⭐⭐⭐",
+          review: "A culinary gem! The restaurant offers a perfect blend of ambiance and exquisite flavors. From the warm hospitality to the mouthwatering dishes, every aspect exceeded expectations. A must-visit for those seeking an unforgettable dining experience."
+        },
+        {
+            card: "card2",
+            image: avatar2,
+            name: "Ron J.",
+            stars:"⭐⭐⭐⭐⭐",
+            review: "A culinary gem! The restaurant offers a perfect blend of ambiance and exquisite flavors. From the warm hospitality to the mouthwatering dishes, every aspect exceeded expectations. A must-visit for those seeking an unforgettable dining experience."
+        },
+        {
+            card: "card3",
+            image: avatar3,
+            name: "Malik S.",
+            stars:"⭐⭐⭐⭐⭐",
+            review: "A culinary gem! The restaurant offers a perfect blend of ambiance and exquisite flavors. From the warm hospitality to the mouthwatering dishes, every aspect exceeded expectations. A must-visit for those seeking an unforgettable dining experience."
+        }
+
+      ];
 
     return(
         <>
@@ -50,8 +79,26 @@ function Main(){
                 </div>
             </div>
         </div>
+        <div className="testimonials">
+            <h1>Testimonials</h1>
+            <div className="tcards">
+            {testimonials.map((testimonial) =>
+            (
+                <div className={testimonial.card}>
+                <div className="avatarbox">
+                   <img src={testimonial.image}/>
+                 <div className="namebox">
+                   <h3>{testimonial.name}</h3>
+                   <h4>{testimonial.stars}</h4>
+                 </div>
+                </div>
+                   <p>{testimonial.review}</p>
+               </div>
+            ))}
 
+            </div>
 
+        </div>
         </>
     )
 }
