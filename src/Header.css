@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+Header{
+  margin:10px 40px 10px 40px;
+}
+
+main .header-bar {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main Header{
+  align-content: center;
+}
+Header img{
+  width: 306.959px;
+  height: 98px;
+  margin: auto;
+}
+Nav{
+  flex-flow: row wrap;
+  justify-content: stretch;
+}
+
+Nav li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 1rem;
+  justify-content: center;
+
+  color: #000;
+  font-size: 24px;
+  font-style: none;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+Nav a{
+  text-decoration: none;
+}

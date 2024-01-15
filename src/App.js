@@ -4,13 +4,16 @@ import Nav from"./Nav.js"
 import Footer from"./Footer.js"
 import Main from"./Main.js"
 import './App.css';
-
+import './sizes/mobile.css'
+import './sizes/tablet.css'
 
 function App() {
   return (
     <main>
-      <Header/>
-      <Nav/>
+      <div className='header-bar'>
+        <Header/>
+        <Nav/>
+      </div>
       <Main/>
       <Footer/>
     </main>

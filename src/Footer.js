@@ -38,7 +38,11 @@ function Footer(){
                 <ul>
                     <li>Address: <br/>357/7, Chamble Street, Chicago</li>
                     <li>Phone: <br/>0112 245 245</li>
-                    <li> Socials: <br/>
+                </ul>
+            </div>
+            <div className="social">
+                 <ul>
+                  <li> Socials: <br/>
                     {socials.map((social) => (<a href={social.url}><FontAwesomeIcon icon={social.icon} size="2x" color="#FFD43B"/> </a>))}</li>
                 </ul>
             </div>

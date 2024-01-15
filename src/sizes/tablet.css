@@ -1,0 +1,44 @@
+@media screen and (max-width: 1024px) {
+    main {
+      font-size: 14px; 
+    }
+    p{
+      line-height: 1;
+  }
+  
+  h1{
+      font-size: 3rem;
+  }
+  
+  h3{
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 1rem;
+  }
+  
+  button{
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  Nav{
+    flex-flow: row wrap;
+    justify-content: stretch;
+  }
+  
+  Nav li{
+    display: block;
+    margin: 1rem;
+    justify-content: center;
+  
+    color: #000;
+    font-size: 24px;
+    font-style: none;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  }
