@@ -15,6 +15,8 @@
 
       padding-left: 1%;
       padding-right: 1%;
+      text-align: center;
+      
   }
 
   Main p{
@@ -39,13 +41,19 @@
     margin-bottom: 2rem;
   }
 
- nav{
-    display: inline-block;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    overflow: hidden;
-  }
+ /*Nav*/
+
+ main .header-bar {
+  display:inline;
+}
+
+ Nav .nav-item{
+  display: flex;
+  margin: auto;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
 
 
 
@@ -66,11 +74,13 @@
 .highlights .dcards{
     display: flex;
     flex-direction: column;
+    padding: 0 0%;
 }
 .highlights #dcardid{
     background-color: #DEDEDE;
     border-radius: 10px;
     margin: 10px;
+    text-align: center;
 }
 
 
@@ -86,6 +96,7 @@
 
 .highlights .title{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -100,26 +111,18 @@
 
 /*Testimonials*/
 
-
-.testimonials #timageid {
-  width: 100px;
-  height: auto;
-  margin-bottom: -20px;
-  margin-top: 10px;
-}
-
 .testimonials .tcards{
   display: flex;
+  flex-direction: column;
   margin-left: 5%;
   margin-right: 5%;
-  flex-direction: column;
 }
 
-
-.testimonials .avatarnamecontainer{
-  display: flex;
-  flex-direction: column;
+.testimonials #tcardid{
+    background-color: #ffffff;
+    border-radius: 10px;
 }
+
 .testimonials p{
   font-style: italic;
 }
@@ -139,10 +142,10 @@
 
 /*About Us*/
 
-.about-us{
+.about-us {
   display: flex;
   flex-direction: column;
-  padding: 5% 10%;
+  text-align: center;
 }
 .about-us h1{
   padding: 0 10% 0 10%;
@@ -152,26 +155,25 @@
   padding: 0 20% 5% 20%;
 }
 
-.about-us .description{
-  flex: 1;
-}
-.about-us .images{
-  flex: 1;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 5%;
-}
-
 .img1{
-  width: 250px;
+  width: 100%;
+  margin: auto;
   transform: translatey(0px);
-  
+  transform: translatex(0rem);
 }
 
 .img2{
-  width: 250px;
+  width: 100%;
   transform: translatex(0px);
 }
+
+.about-us .images{
+  flex: 1;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
 
 /*Footer*/
 footer{
@@ -180,6 +182,11 @@ footer{
   align-items: center;
   text-align: center;
   gap: 20px;
+}
+
+.doormat-menu ul{
+  display: flex;
+  flex-direction: column;
 }
 
   }

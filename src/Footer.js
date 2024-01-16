@@ -4,7 +4,8 @@ import {
     faInstagram } from "@fortawesome/free-brands-svg-icons";
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
   import './Footer.css';
-  import './sizes/mobile.css';
+  import { Link } from 'react-router-dom';
+
 
 
   const socials = [
@@ -28,13 +29,13 @@ function Footer(){
         <footer>
             <div className="doormat-menu">
             <ul>
-                    <li><a href='/Header.js'>Home</a></li>
-                    <li><a href='/Header.js'>About</a></li>
-                    <li><a href='/Header.js'>Menu</a></li>
-                    <li><a href='/Header.js'>Reservations</a></li>
-                    <li><a href='/Header.js'>Order Online</a></li>
-                    <li><a href='/Header.js'>Login</a></li>
-                </ul>
+            <Link to="/" className='nav-item'>Home</Link>
+            <Link to="/" className='nav-item'>About</Link>
+            <Link to="/" className='nav-item'>Menu</Link>
+            <Link to="/" className='nav-item'>Reservations</Link>
+            <Link to="/" className='nav-item'>Order Online</Link>
+            <Link to="/" className='nav-item'>Login</Link>
+        </ul>
             </div>
             <div className="contact">
                 <ul>

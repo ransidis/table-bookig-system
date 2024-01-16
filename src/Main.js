@@ -1,5 +1,6 @@
 import hero_image from "./images/hero_image.png"
 import './Main.css';
+import './sizes/mobile.css';
 import GreekSalad from "./images/GreekSalad.png"
 import LemonDessert from "./images/LemonDessert.png"
 import Bruchetta from "./images/Bruchetta.png"

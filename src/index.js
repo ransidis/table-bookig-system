@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Logo from "./images/Logo.png";
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <head>
     <meta name="description" content="We are family owned, Mediterranean restaurant, focused on traditional recipes served with a modern twist"/>
     <meta name="og:title" content="Little Lemons Restaurent"/>
@@ -16,7 +17,7 @@ root.render(
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </head>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -22,12 +22,14 @@ Header img{
   height: 98px;
   margin: auto;
 }
+
+/*Nav*/
 Nav{
   flex-flow: row wrap;
   justify-content: stretch;
 }
 
-Nav li{
+Nav .nav-item{
   list-style-type: none;
   display: inline-block;
   margin: 1rem;

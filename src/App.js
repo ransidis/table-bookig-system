@@ -3,9 +3,8 @@ import Header from "./Header.js"
 import Nav from"./Nav.js"
 import Footer from"./Footer.js"
 import Main from"./Main.js"
-import './App.css';
-import './sizes/mobile.css'
-import './sizes/tablet.css'
+
+import { Route, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -14,7 +13,9 @@ function App() {
         <Header/>
         <Nav/>
       </div>
-      <Main/>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+      </Routes>
       <Footer/>
     </main>
   );
