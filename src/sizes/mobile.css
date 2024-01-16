@@ -16,8 +16,23 @@
       padding-left: 1%;
       padding-right: 1%;
       text-align: center;
-      
   }
+
+  .hero h1{
+    font-size: 3rem;
+  }
+
+  .hero h3{
+    font-size: 2rem;
+  }
+
+  .hero p{
+    font-size: 1rem;
+}
+
+.hero button{
+  margin-top: -0.5rem;
+}
 
   Main p{
       line-height: 1;

@@ -11,7 +11,7 @@ import aboutus1 from "./images/aboutus1.png"
 import aboutus2 from "./images/aboutus2.png"
 
 
-function Main(){
+function Main(props){
 
     const specials = [
         {
@@ -67,7 +67,7 @@ function Main(){
             <div className="container">
                 <div className="content">
                     <h1>Little Lemon</h1>
-                    <h3>Chicago</h3>
+                    <h3>{props.location}</h3>
                     <p>We are family owned, <br/>
                         Mediterranean restaurant, <br/>
                         focused on traditional recipes served with a modern twist</p>

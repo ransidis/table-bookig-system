@@ -9,13 +9,6 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <head>
-    <meta name="description" content="We are family owned, Mediterranean restaurant, focused on traditional recipes served with a modern twist"/>
-    <meta name="og:title" content="Little Lemons Restaurent"/>
-    <meta name="og:description" content="We are family owned, Mediterranean restaurant, focused on traditional recipes served with a modern twist"/>
-    <meta name="og:image" content={Logo}/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    </head>
     <App />
   </BrowserRouter>
 );
