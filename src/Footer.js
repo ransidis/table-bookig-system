@@ -3,6 +3,8 @@ import {
     faFacebook,
     faInstagram } from "@fortawesome/free-brands-svg-icons";
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+  import './Footer.css';
+  import './sizes/mobile.css';
 
 
   const socials = [
@@ -36,8 +38,8 @@ function Footer(){
             </div>
             <div className="contact">
                 <ul>
-                    <li>Address: <br/>357/7, Chamble Street, Chicago</li>
-                    <li>Phone: <br/>0112 245 245</li>
+                    <li>Address: <br/>357/7, Chamble Street, Chicago</li><br/>
+                    <li>Phone: <br/><a href="tel:+1234567890">0112 245 245</a></li>
                 </ul>
             </div>
             <div className="social">

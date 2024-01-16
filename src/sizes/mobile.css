@@ -29,7 +29,7 @@
     font-size: 1.5rem;
   }
 
-  h2{
+  Main h2{
     font-size: 1rem;
   }
 
@@ -39,63 +39,148 @@
     margin-bottom: 2rem;
   }
 
-  Nav nav{
-    flex-flow: row wrap;
-    justify-content: stretch;
-  }
-
-  .header-bar nav li{
-    display: flex;
+ nav{
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
     margin: auto;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 300;
+    overflow: hidden;
   }
 
-.highlights {
+
+
+/*This Weeks Specials*/
+
+  .highlights {
     padding: 3rem;
 }
 
-.highlights img {
+.highlights #dimageid {
     border-radius: 10px 10px 0 0;
     width: 100%;
-height: 228px;
-justify-content: center;
-align-items: center;
+    height: 228px;
+    justify-content: center;
+    align-items: center;
 }
 
-.highlights .cards{
+.highlights .dcards{
     display: flex;
     flex-direction: column;
-    
 }
-
-.highlights .card1,.card2,.card3{
+.highlights #dcardid{
     background-color: #DEDEDE;
     border-radius: 10px;
     margin: 10px;
-    
-    
 }
 
-.highlights h2,p,h4,a{
+
+.highlights p,h4,a{
     padding: 10px 20px 20px 20px;
     color: black;
 }
+
+.highlights h3{
+  padding: 10px 10px 5px 10px;
+  color: black;
+}
+
 .highlights .title{
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .highlights button{
-  margin-right: 10px;
-  margin-top: 0;
-  padding: 10px 10px;
-  border-radius: 23px;
-  background: #F4CE14;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 1rem;
+    margin-right: 10px;
+    padding: 10px 30px;
+    border-radius: 23px;
+    background: #F4CE14;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
 }
+
+/*Testimonials*/
+
+
+.testimonials #timageid {
+  width: 100px;
+  height: auto;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+.testimonials .tcards{
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+}
+
+
+.testimonials .avatarnamecontainer{
+  display: flex;
+  flex-direction: column;
+}
+.testimonials p{
+  font-style: italic;
+}
+.testimonials .namebox{
+  padding-top: 20px;
+}
+
+.testimonials h4{
+  padding: 0px 10px 0px 0px;
+}
+
+.testimonials h1{
+  color: #F4CE14;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+/*About Us*/
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10%;
+}
+.about-us h1{
+  padding: 0 10% 0 10%;
+}
+
+.about-us h4{
+  padding: 0 20% 5% 20%;
+}
+
+.about-us .description{
+  flex: 1;
+}
+.about-us .images{
+  flex: 1;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.img1{
+  width: 250px;
+  transform: translatey(0px);
+  
+}
+
+.img2{
+  width: 250px;
+  transform: translatex(0px);
+}
+
+/*Footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
   }
 

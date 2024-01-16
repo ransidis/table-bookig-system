@@ -1,4 +1,4 @@
-
+import './sizes/mobile.css';
 
 function Nav(){
 

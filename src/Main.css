@@ -46,33 +46,38 @@
     width: 100%;
 }
 
+/*This weeks special*/
 
 .highlights {
     padding: 3rem;
 }
 
-.highlights img {
+.highlights #dimageid {
     border-radius: 10px 10px 0 0;
     width: 100%;
-height: 228px;
-justify-content: center;
-align-items: center;
+    height: 228px;
+    justify-content: center;
+    align-items: center;
 }
 
-.highlights .cards{
+.highlights .dcards{
     display: flex;
 }
-
-.highlights .card1,.card2,.card3{
+.highlights #dcardid{
     background-color: #DEDEDE;
     border-radius: 10px;
     margin: 10px;
 }
 
+
 .highlights h2,p,h4,a{
     padding: 10px 20px 20px 20px;
     color: black;
+}
 
+.highlights h3{
+    padding: 15px 20px 10px 20px;
+    color: black;
 }
 
 .highlights .title{
@@ -89,27 +94,87 @@ align-items: center;
     font-size: 1.3rem;
 }
 
+
+/*Testimonials*/
+
 .testimonials {
     padding: 3rem;
+    background-color: #495E57;;
+    text-align: center;
 }
 
-.testimonials img {
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-height: 228px;
-justify-content: center;
-align-items: center;
+.testimonials #timageid {
+    width: 100px;
+    height: auto;
 }
 
 .testimonials .tcards{
     display: flex;
-    
+    margin-left: 20%;
+    margin-right: 20%;
 }
-
-.testimonials .card{
-    background-color: #481b1b;
+.testimonials #tcardid{
+    background-color: #ffffff;
     border-radius: 10px;
     margin: 10px;
 }
+
+.testimonials .avatarnamecontainer{
+    display: flex;
+    flex-direction: row;
+}
+.testimonials p{
+    font-style: italic;
+}
+.testimonials .namebox{
+    padding-top: 20px;
+}
+
+.testimonials h4{
+    padding: 0px 10px 0px 0px;
+}
+
+.testimonials h1{
+    color: #F4CE14;
+    margin-bottom: 20px;
+}
+
+/*About Us*/
+
+.about-us{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.about-us .description{
+    flex: 1;
+}
+.about-us .images{
+    flex: 1;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+
+
+}
+
+.img1{
+    width: 250px;
+    transform: translatey(100px);
+    transform: translatex(rem);
+}
+
+.img2{
+    width: 250px;
+    transform: translatex(-100px);
+}
+
+/*Footer*/
+
+
 
 
