@@ -58,16 +58,8 @@
 
  /*Nav*/
 
- main .header-bar {
-  display:inline;
-}
-
- Nav .nav-item{
-  display: flex;
-  margin: auto;
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
+nav ul{
+  display: none;
 }
 
 

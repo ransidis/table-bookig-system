@@ -1,0 +1,42 @@
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    background-color: yellow;
+  }
+
+  .toggle-button {
+    font-size: 1.5em;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin: 0rem;
+
+    color: #000;
+    font-size: 24px;
+    font-style: none;
+    font-weight: 700;
+    text-decoration: none;
+
+    
+  }
+
+  /* Media Query for small screens */
+  @media (min-width: 769px) {
+    .mobile-nav {
+      display: none;
+    }
+  }

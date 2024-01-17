@@ -1,9 +1,11 @@
 
 import { Link } from 'react-router-dom';
+import ResponsiveNav from './pages/ResponsiveNav';
 
 function Nav(){
 
     return(
+        <>
         <nav>
         <ul>
             <Link to="/" className='nav-item'>Home</Link>
@@ -13,7 +15,12 @@ function Nav(){
             <Link to="/" className='nav-item'>Order Online</Link>
             <Link to="/" className='nav-item'>Login</Link>
         </ul>
+        
     </nav>
+    <div className='ResponsiveNav'>
+            <ResponsiveNav />
+        </div>
+    </>
     )
 }
 
