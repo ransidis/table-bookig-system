@@ -92,7 +92,7 @@ function Main(props){
                    <img src={special.dimage} id="dimageid"/>
                    <h3>{special.dname}</h3>
                    <p>{special.ddescription}</p>
-                   <h4><a href="Home.js">Order a Delivery</a></h4>
+                   <h4><a href="/order-online">Order a Delivery</a></h4>
                </div>
             ))}
 
