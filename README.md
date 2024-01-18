@@ -7,7 +7,7 @@ purely coded in HTML, CSS, JS and React.js, no any other frameworks or libraries
 ## Special Features
 ### 1. Components Based app.
 ### 2. Responsive for both Desktop and Mobile Screens.
-### 3. Some Special Features/hooks used : Routers, Link,ScrollLink, useState, useEffect, map, props, fetchAPI, SubmitAPI, Controlled Forms.
+### 3. Some Special Features/hooks used : Routers, Link, ScrollLink, useState, useEffect, map, props, fetchAPI, SubmitAPI, Controlled Forms.
 ### 4. FontAwesomeIcon package used for icons.
 
 ### Preview the Live app: 
