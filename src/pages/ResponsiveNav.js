@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './ResponsiveNav.css'; // Create a separate CSS file for styling
+import './ResponsiveNav.css';
 
 const MobileNavDropdown = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

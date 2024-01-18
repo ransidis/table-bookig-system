@@ -46,3 +46,15 @@ Nav a{
   text-decoration: none;
 }
 
+
+@media screen and (max-width: 768px) {
+
+  main .header-bar {
+    display:block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+

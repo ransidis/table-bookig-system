@@ -29,12 +29,12 @@ function Footer(){
         <footer>
             <div className="doormat-menu">
             <ul>
-            <Link to="/" className='nav-item'>Home</Link>
-            <Link to="/" className='nav-item'>About</Link>
-            <Link to="/" className='nav-item'>Menu</Link>
-            <Link to="/reservations" className='nav-item'>Reservations</Link>
-            <Link to="/" className='nav-item'>Order Online</Link>
-            <Link to="/" className='nav-item'>Login</Link>
+            <Link style={{color:'white'}} to="/" className='nav-item'>Home</Link>
+            <Link style={{color:'white'}}to="/" className='nav-item'>About</Link>
+            <Link style={{color:'white'}}to="/" className='nav-item'>Menu</Link>
+            <Link style={{color:'white'}}to="/reservations" className='nav-item'>Reservations</Link>
+            <Link style={{color:'white'}}to="/" className='nav-item'>Order Online</Link>
+            <Link style={{color:'white'}}to="/" className='nav-item'>Login</Link>
         </ul>
             </div>
             <div className="contact">

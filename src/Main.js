@@ -9,6 +9,7 @@ import avatar2 from "./images/avatar2.png"
 import avatar3 from "./images/avatar3.png"
 import aboutus1 from "./images/aboutus1.png"
 import aboutus2 from "./images/aboutus2.png"
+import { Link } from "react-router-dom";
 
 
 function Main(props){
@@ -71,7 +72,7 @@ function Main(props){
                     <p>We are family owned, <br/>
                         Mediterranean restaurant, <br/>
                         focused on traditional recipes served with a modern twist</p>
-                    <button>Reserve a Table</button>
+                    <Link to='/reservations'><button >Reserve a Table</button></Link>
                 </div>
                 <div className="image">
                     <img src={hero_image}/>
@@ -79,7 +80,7 @@ function Main(props){
             </div>
         </div>
 
-        <div className="highlights">
+        <div className="highlights" id='highlights'>
             <div className="title">
                 <h1>This Weeks Specials</h1>
                 <button>Order Online</button>
