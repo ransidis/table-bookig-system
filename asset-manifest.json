@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/table-bookig-system/static/css/main.5d5d9c63.css",
+    "main.js": "/table-bookig-system/static/js/main.51c8fc2a.js",
+    "static/js/787.dc346279.chunk.js": "/table-bookig-system/static/js/787.dc346279.chunk.js",
+    "static/media/developing.png": "/table-bookig-system/static/media/developing.525fb7f46a06cfd6f474.png",
+    "static/media/hero_image.png": "/table-bookig-system/static/media/hero_image.e11988678a0eb22939c5.png",
+    "static/media/aboutus2.png": "/table-bookig-system/static/media/aboutus2.d9de0b1d4689be935ff5.png",
+    "static/media/GreekSalad.png": "/table-bookig-system/static/media/GreekSalad.f814ea25b593590672c6.png",
+    "static/media/aboutus1.png": "/table-bookig-system/static/media/aboutus1.b7da49c80a19e90eb9de.png",
+    "static/media/Bruchetta.png": "/table-bookig-system/static/media/Bruchetta.df8ceca155b494ce093f.png",
+    "static/media/LemonDessert.png": "/table-bookig-system/static/media/LemonDessert.fcfd8418d33c6d9e253f.png",
+    "static/media/avatar3.png": "/table-bookig-system/static/media/avatar3.ee0aa60e67305e53bcf9.png",
+    "static/media/avatar1.png": "/table-bookig-system/static/media/avatar1.5f2c6c9d89c5d1563769.png",
+    "static/media/avatar2.png": "/table-bookig-system/static/media/avatar2.ff922da80bdd83b2a21b.png",
+    "index.html": "/table-bookig-system/index.html",
+    "main.5d5d9c63.css.map": "/table-bookig-system/static/css/main.5d5d9c63.css.map",
+    "main.51c8fc2a.js.map": "/table-bookig-system/static/js/main.51c8fc2a.js.map",
+    "787.dc346279.chunk.js.map": "/table-bookig-system/static/js/787.dc346279.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d5d9c63.css",
+    "static/js/main.51c8fc2a.js"
+  ]
+}
