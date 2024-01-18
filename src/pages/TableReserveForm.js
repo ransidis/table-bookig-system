@@ -7,6 +7,8 @@ function TableReserveForm(props) {
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
   const [availableTimes, setAvailableTimes] = useState([]);
+  const [name, setName] = useState("")
+  const [phone,setPhone] = useState("")
 
   useEffect(() => {
     fetchAvailableTimes(new Date().toISOString().split('T')[0]);
@@ -22,9 +24,15 @@ function TableReserveForm(props) {
       });
   };
 
-  const handleSubmit = () => {
-    // Handle form submission
-    alert('Reservation Successful!');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setName('')
+    setGuests('')
+    setOccasion('')
+    setPhone('')
+    setDate(new Date())
+
+    document.getElementById('output').innerHTML = `Reservation Successfull! <br/> You have reserved tables for ${guests} guest(s) on ${date} at ${time}`;
   };
 
   const handleDateChange = (e) => {
@@ -33,32 +41,45 @@ function TableReserveForm(props) {
     fetchAvailableTimes(newDate);
   };
 
-  function infoMessage(){
-    alert('Booking system fetches data from a local API, please select a date for reservation between 2024 Jan 1 to 2024 Jan 30. Thanks')
-  }
+
 
   return (
     <>
-      <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
-        <label htmlFor="res-date">Choose date</label>
-        <input type="date" id="res-date" value={date} onChange={handleDateChange} />
-        <label htmlFor="res-time">Choose time</label>
-        <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
+      <form  onSubmit={handleSubmit} style={{textAlign:'center'}}>
+      <fieldset>
+        <p>*Please fill all the fields to submit</p>
+        <label htmlFor="res-name">Your Name</label><br/>
+        <input required type="text" id="res-name" placeholder='Ex: Ransi Dissanayake' value={name} onChange={(e)=>setName(e.target.value)} /><br/>
+
+        <label htmlFor="res-phone">Your Phone Number</label><br/>
+        <input required type="text" id="res-phone" placeholder='07xxxxxxxx' pattern='07[0-9]{8}' value={phone} onChange={(e)=>setPhone(e.target.value) } /><br/>
+      </fieldset>
+      <fieldset>
+        <label htmlFor="res-date">Choose date</label><br/>
+        <input required type="date" id="res-date" value={date} onChange={handleDateChange} /><br/>
+
+        <label htmlFor="res-time">Choose time</label><br/>
+        <select required id="res-time" value={time} disabled={!date} onChange={(e) => setTime(e.target.value)}><br/>
           {availableTimes.map((availableTime) => (
-            <option key={availableTime}>{availableTime}</option>
+            <option key={availableTime} >{availableTime}</option>
           ))}
-        </select>
-        <label htmlFor="guests">Number of guests</label>
-        <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)} />
-        <label htmlFor="occasion">Occasion</label>
-        <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+        </select><br/>
+
+        <label htmlFor="guests">Number of guests</label><br/>
+        <input required type="number" placeholder="between 1 - 20" min="1" max="20" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)} /><br/>
+
+        <label htmlFor="occasion">Occasion</label><br/>
+        <select required id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}><br/>
           {props.availableoccasions.map((availableoccasion) => (
             <option key={availableoccasion}>{availableoccasion}</option>
           ))}
         </select>
-        <input type="submit" value="Make Your reservation" disabled={!date || !time || !guests || !occasion} />
+        <br/><input type="submit" value="Make Your reservation" disabled={!date || !time || !guests || !occasion} />
+        <div id="output">
+
+        </div>
+        </fieldset>
       </form>
-      <input type="button" onClick={infoMessage} value="How this works"/>
     </>
   );
 }
