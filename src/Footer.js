@@ -5,7 +5,7 @@ import {
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
   import './Footer.css';
   import { Link } from 'react-router-dom';
-
+  import { Link as ScrollLink } from 'react-scroll';
 
 
   const socials = [
@@ -30,11 +30,11 @@ function Footer(){
             <div className="doormat-menu">
             <ul>
             <Link style={{color:'white'}} to="/" className='nav-item'>Home</Link>
-            <Link style={{color:'white'}}to="/" className='nav-item'>About</Link>
-            <Link style={{color:'white'}}to="/" className='nav-item'>Menu</Link>
-            <Link style={{color:'white'}}to="/reservations" className='nav-item'>Reservations</Link>
-            <Link style={{color:'white'}}to="/" className='nav-item'>Order Online</Link>
-            <Link style={{color:'white'}}to="/" className='nav-item'>Login</Link>
+            <ScrollLink style={{color:'white'}} to="about-us" smooth={true} duration={500} className='nav-item'>About</ScrollLink>
+            <ScrollLink style={{color:'white'}} to="highlights" smooth={true} duration={500} className='nav-item'>Menu</ScrollLink>
+            <Link style={{color:'white'}} to="/reservations" className='nav-item'>Reservations</Link>
+            <Link style={{color:'white'}} to="/order-online" className='nav-item'>Order Online</Link>
+            <Link style={{color:'white'}} to="/login" className='nav-item'>Login</Link>
         </ul>
             </div>
             <div className="contact">

@@ -83,7 +83,7 @@ function Main(props){
         <div className="highlights" id='highlights'>
             <div className="title">
                 <h1>This Weeks Specials</h1>
-                <button>Order Online</button>
+                <Link to='/order-online'><button>Order Online</button></Link>
             </div>
             <div className="dcards">
                 {specials.map((special) =>
@@ -121,7 +121,7 @@ function Main(props){
             </div>
         </div>
 
-        <div className="about-us">
+        <div className="about-us" id="about-us">
             <div className="item description">
                 <h1>Adrian & Mario</h1>
                 <h4>Founders of the Taste!</h4>
