@@ -64,7 +64,7 @@ function Main(props){
 
     return(
         <>
-        <div className="hero">
+        <div className="hero" id='hero'>
             <div className="container">
                 <div className="content">
                     <h1>Little Lemon</h1>
