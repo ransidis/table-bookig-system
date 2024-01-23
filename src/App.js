@@ -23,7 +23,7 @@ function App() {
         <div id="nav"><Nav/></div>
       </div>
       <Routes location={location} key={location.pathname}>
-        <Route index element={<Main location="Chicago"/>}/>
+        <Route index exact element={<Main location="Chicago"/>}/>
         <Route path='/reservations' element={<TableReserve/>}/>
         <Route path='/order-online' element={<OrderOnline/>}/>
         <Route path='/login' element={<Login/>}/>

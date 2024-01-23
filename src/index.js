@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 document.title = 'Little Lemon';
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/table-booking-system'>
     <App />
   </BrowserRouter>
 );
