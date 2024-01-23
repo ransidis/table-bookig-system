@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/table-bookig-system/static/css/main.5d5d9c63.css",
-    "main.js": "/table-bookig-system/static/js/main.56d09cbd.js",
+    "main.js": "/table-bookig-system/static/js/main.0e4a63eb.js",
     "static/js/787.dc346279.chunk.js": "/table-bookig-system/static/js/787.dc346279.chunk.js",
     "static/media/developing.png": "/table-bookig-system/static/media/developing.525fb7f46a06cfd6f474.png",
     "static/media/hero_image.png": "/table-bookig-system/static/media/hero_image.e11988678a0eb22939c5.png",
@@ -15,11 +15,11 @@
     "static/media/avatar2.png": "/table-bookig-system/static/media/avatar2.ff922da80bdd83b2a21b.png",
     "index.html": "/table-bookig-system/index.html",
     "main.5d5d9c63.css.map": "/table-bookig-system/static/css/main.5d5d9c63.css.map",
-    "main.56d09cbd.js.map": "/table-bookig-system/static/js/main.56d09cbd.js.map",
+    "main.0e4a63eb.js.map": "/table-bookig-system/static/js/main.0e4a63eb.js.map",
     "787.dc346279.chunk.js.map": "/table-bookig-system/static/js/787.dc346279.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d5d9c63.css",
-    "static/js/main.56d09cbd.js"
+    "static/js/main.0e4a63eb.js"
   ]
 }
