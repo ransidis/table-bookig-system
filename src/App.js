@@ -9,9 +9,12 @@ import OrderOnline from './pages/OrderOnline.js'
 import Login from './pages/Login.js'
 import BackToTopButton from './BackToTopButton';
 
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, Link, useLocation } from 'react-router-dom';
 
 function App() {
+
+  const location = useLocation();
+
   return (
     <main>
       <BackToTopButton/>
@@ -19,8 +22,8 @@ function App() {
         <div id="header"><Header/></div>
         <div id="nav"><Nav/></div>
       </div>
-      <Routes>
-        <Route path='/' element={<Main location="Chicago"/>}/>
+      <Routes location={location} key={location.pathname}>
+        <Route index element={<Main location="Chicago"/>}/>
         <Route path='/reservations' element={<TableReserve/>}/>
         <Route path='/order-online' element={<OrderOnline/>}/>
         <Route path='/login' element={<Login/>}/>
